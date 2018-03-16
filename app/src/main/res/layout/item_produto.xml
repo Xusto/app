@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/paddingTendaActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvIDProd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvItemProdutoNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?android:attr/colorPrimary"
+            android:textSize="@dimen/tamanoTextoItemProduto"
+            android:textStyle="bold"
+            tools:text="nome" />
+
+        <TextView
+            android:id="@+id/tvItemProdutoDescricion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?android:attr/colorPrimary"
+            tools:text = "Descricion do produto" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvItemProdutoPrezo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="15"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/tamanoTextoItemProduto"/>
+
+</RelativeLayout>

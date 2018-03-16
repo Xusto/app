@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="paddingTendaActivity">12dp</dimen>
+    <dimen name="marxeImaxeTendaActivity">24dp</dimen>
+    <dimen name="marxeEsquerdoTendaActivity">12dp</dimen>
+    <dimen name="tamanoLogoTendaActivity">70dp</dimen>
+    <dimen name="tamanoTextoTendaActivity">20sp</dimen>
+    <dimen name="tamanoTextoItemProduto">15sp</dimen>
+    <dimen name="tamanoVerticalMapaTendaActivity">220dp</dimen>
+    <dimen name="tamanoTextoAxudaSpTendaPrudot">10sp</dimen>
+    <dimen name="espazoEsquerda">2dp</dimen>
+
+</resources>

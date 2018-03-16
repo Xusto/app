@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/paddingTendaActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/adEngadirProdutoNome"
+        android:layout_alignParentStart="true"
+        android:layout_alignBaseline="@id/adEngadirProdutoNome"
+        />
+
+    <EditText
+        android:id="@+id/adEngadirProdutoNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/flCentro"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignBaseline="@id/adEngadirProdutoDescricion"
+        android:text="@string/adEngadirProdutoDescricion"/>
+
+    <EditText
+        android:id="@+id/adEngadirProdutoDescricion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adEngadirProdutoNome"
+        android:layout_toEndOf="@id/flCentro"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignBaseline="@id/adEngadirProdutoPrezo"
+        android:text="@string/adEngadirProdutoPrezo"/>
+
+    <EditText
+        android:id="@+id/adEngadirProdutoPrezo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adEngadirProdutoDescricion"
+        android:layout_toEndOf="@id/flCentro"
+        android:inputType="numberDecimal"/>
+
+
+    <FrameLayout
+        android:id="@+id/flCentro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+    </FrameLayout>
+
+
+</RelativeLayout>

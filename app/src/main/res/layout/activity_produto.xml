@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dam.xusto.ProdutoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/marxeImaxeTendaActivity"
+        android:layout_marginTop="@dimen/marxeImaxeTendaActivity"
+        android:id="@+id/linearLayout3">
+
+        <ImageView
+            android:id="@+id/ivProdutoLogo"
+            android:layout_width="@dimen/tamanoLogoTendaActivity"
+            android:layout_height="@dimen/tamanoLogoTendaActivity"
+            android:src="@mipmap/ic_launcher_round"
+            app:layout_constraintEnd_toStartOf="@+id/tvTendaNome"
+            app:layout_constraintTop_toBottomOf="@+id/tvTendaNome" />
+
+        <TextView
+            android:id="@+id/tvProdutoNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marxeEsquerdoTendaActivity"
+            android:textColor="?android:attr/colorPrimary"
+            android:textSize="@dimen/tamanoTextoTendaActivity"
+            android:textStyle="bold"
+            tools:text="Produto de proba" />
+
+        <TextView
+            android:id="@+id/tvProdutoPrezo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marxeEsquerdoTendaActivity"
+            tools:text="0.85"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/espazoEsquerda"
+            android:text="@string/tvEuros"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvProdutoDescricion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/linearLayout3"
+        android:layout_below="@+id/linearLayout3"
+        android:textColor="?android:attr/colorPrimary"
+        android:layout_marginTop="@dimen/paddingTendaActivity"
+        android:layout_marginBottom="@dimen/paddingTendaActivity"
+        android:layout_marginEnd="@dimen/marxeImaxeTendaActivity"
+        tools:text="Texto de proba"/>
+
+    <ListView
+        android:id="@+id/lvProdutoComentarios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvProdutoDescricion"
+        android:layout_marginBottom="@dimen/paddingTendaActivity"
+        />
+
+
+</RelativeLayout>

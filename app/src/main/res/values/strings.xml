@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Xusto</string>
+    <string name="tabSpecTenda">Tendas</string>
+    <string name="tabSpecProduto">Produtos</string>
+    <string name="spProductoTendaAxuda">Selecciona unha tenda para ver o seu catálogo...</string>
+    <string name="miEngadir">Engadir...</string>
+    <string name="adEngadirProdutoNome">Nome</string>
+    <string name="adEngadirProdutoDescricion">Descrición</string>
+    <string name="adEngadirProdutoPrezo">Prezo</string>
+    <string name="adEngadirProdutoTitulo">Engadir produto</string>
+    <string name="adBtnAceptar">Aceptar</string>
+    <string name="adBtnCancelar">Cancelar</string>
+    <string name="title_activity_produto">ProdutoActivity</string>
+    <string name="tvEuros">euros</string>
+</resources>

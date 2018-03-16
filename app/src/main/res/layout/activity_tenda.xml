@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dam.xusto.TendaActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/marxeImaxeTendaActivity"
+        android:layout_marginTop="@dimen/marxeImaxeTendaActivity"
+        android:id="@+id/linearLayout2">
+
+        <ImageView
+            android:id="@+id/ivTendaLogo"
+            android:layout_width="@dimen/tamanoLogoTendaActivity"
+            android:layout_height="@dimen/tamanoLogoTendaActivity"
+            android:src="@mipmap/ic_launcher_round"
+            app:layout_constraintEnd_toStartOf="@+id/tvTendaNome"
+            app:layout_constraintTop_toBottomOf="@+id/tvTendaNome" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTendaNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marxeEsquerdoTendaActivity"
+                android:textColor="?android:attr/colorPrimary"
+                android:textSize="@dimen/tamanoTextoTendaActivity"
+                android:textStyle="bold"
+                tools:text="Bico de grao" />
+
+            <TextView
+                android:id="@+id/tvTendaEnderezo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marxeEsquerdoTendaActivity"
+                tools:text="enderezo de proba"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tamanoVerticalMapaTendaActivity"
+        android:layout_alignStart="@+id/linearLayout2"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginTop="@dimen/paddingTendaActivity"
+        android:layout_marginBottom="@dimen/paddingTendaActivity"
+        android:layout_marginEnd="@dimen/marxeImaxeTendaActivity"/>
+
+    <ListView
+        android:id="@+id/lvTendaComentarios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/mapView"
+        android:layout_alignEnd="@id/mapView"
+        android:layout_marginBottom="@dimen/paddingTendaActivity"
+        android:layout_below="@id/mapView"
+        />
+
+
+</RelativeLayout>
